@@ -1,0 +1,335 @@
+/* ==========================================
+   LIGHT BLUE & WHITE THEME STYLES
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f8fb;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 168, 232, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: #0284c7;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #0369a1;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0284c7;
+}
+
+/* 3-DOTS BUTTON (Default Hidden on Desktop) */
+.three-dots-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #0284c7;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* HERO SECTION */
+.hero {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text small {
+    color: #0284c7;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    color: #0f172a;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img, .about img, .project img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.15);
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #0284c7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-right: 10px;
+    border: 2px solid #0284c7;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+    border-color: #0369a1;
+}
+
+.btn.outline {
+    background-color: transparent;
+    color: #0284c7;
+}
+
+.btn.outline:hover {
+    background-color: #e0f2fe;
+}
+
+/* SECTIONS COMMON */
+.section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    text-align: center;
+    color: #0f172a;
+    font-size: 32px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #38bdf8;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* ABOUT SECTION */
+.about {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08);
+}
+
+.about article h3 {
+    color: #0284c7;
+    margin-bottom: 15px;
+}
+
+.about article p {
+    margin-bottom: 10px;
+    color: #64748b;
+}
+
+/* CARDS / SKILLS */
+.cards, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cards article, .project {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cards article:hover, .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.15);
+}
+
+.cards h3, .project h3 {
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.cards p, .project p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.project b {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0284c7;
+    font-size: 13px;
+}
+
+/* CONTACT SECTION */
+.contact-box {
+    display: flex;
+    gap: 30px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08);
+}
+
+.contact-info, form {
+    flex: 1;
+}
+
+.contact-info h3 {
+    color: #0284c7;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    color: #64748b;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    background: #f8fafc;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #38bdf8;
+    background: #ffffff;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #0369a1;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 40px;
+}
+
+/* ==========================================
+   MOBILE & TABLET VIEW (< 768px)
+   ========================================== */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+
+    /* 3-dots Menu Button Mobile/Tablet par Show hoga */
+    .three-dots-btn {
+        display: block;
+    }
+
+    /* Standard Header Links Mobile/Tablet par Hide honge */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        width: 180px;
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        padding: 15px 0;
+        box-shadow: 0 10px 25px rgba(2, 132, 199, 0.15);
+        border-radius: 8px;
+    }
+
+    /* Active Hone Par 3-dots Open Hoga */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .hero, .about, .contact-box {
+        flex-direction: column;
+    }
+}

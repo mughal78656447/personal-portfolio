@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSM FX | Forex Trading</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">MSM<span>FX</span></h2>
+
+        <!-- Mobile/Tablet 3-Dots Button -->
+        <button class="three-dots-btn" id="menuToggle" aria-label="Toggle Navigation">&#8285;</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Analysis</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <small>FOREX TRADING & MARKET ANALYSIS</small>
+            <h1><span>MSM FX</span></h1>
+            <p>
+                A Forex trading enthusiast interested in technical analysis, price action, market structure and risk management.
+            </p>
+            <a href="#projects" class="btn">View Analysis</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/forex-hero.jpg" alt="Forex Trading">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about">
+            <img src="images/forex-hero.jpg" alt="Forex Trader">
+            <article>
+                <h3>Forex Trader & Market Learner</h3>
+                <p>
+                    I am interested in Forex trading and learning how financial markets move through technical analysis.
+                </p>
+                <p>
+                    My main interests include price action, support and resistance, market structure and risk management.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+        <h2>My Trading Skills</h2>
+        <div class="cards">
+            <article>
+                <h3>📊 Technical Analysis</h3>
+                <p>Studying charts, trends and market movement.</p>
+            </article>
+            <article>
+                <h3>📈 Price Action</h3>
+                <p>Understanding candles and important price levels.</p>
+            </article>
+            <article>
+                <h3>🎯 Support & Resistance</h3>
+                <p>Finding important support and resistance areas.</p>
+            </article>
+            <article>
+                <h3>🛡 Risk Management</h3>
+                <p>Planning stop loss and controlling trading risk.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>My Forex Analysis</h2>
+        <div class="projects">
+            <article class="project">
+                <img src="images/eurusd.jpg" alt="EUR USD Analysis">
+                <h3>EUR/USD Analysis</h3>
+                <p>Analysis using price action and market structure.</p>
+                <b>Price Action | S/R</b>
+            </article>
+
+            <article class="project">
+                <img src="images/gold.jpg" alt="Gold Analysis">
+                <h3>Gold Market Analysis</h3>
+                <p>Studying Gold price movement and important levels.</p>
+                <b>Gold | Technical Analysis</b>
+            </article>
+
+            <article class="project">
+                <img src="images/strategy.jpg" alt="Forex Strategy">
+                <h3>Forex Strategy</h3>
+                <p>Trading setup based on entry, stop loss and risk.</p>
+                <b>Strategy | Risk Management</b>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <div class="contact-box">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>Have a question about Forex trading? Send me a message.</p>
+                <p><strong>Email:</strong> kingshoaib7865@gmail.com</p>
+                <p><strong>Location:</strong> Sahiwal, Pakistan</p>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 ShoaibFX | Forex Trading Portfolio</p>
+</footer>
+
+<!-- 3-Dots Menu Logic -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle 3-dots menu
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
+
+</body>
+</html>
